@@ -29,6 +29,17 @@ public class QuickSort {
         swap(arr,p,bigger);
         return bigger;
     }
+    public static int partition2(int[] arr,int p,int r){
+        int left=p+1;
+        int right=r;
+        while (left<=right){
+            while (left<=right&&arr[left]<=arr[p]) left++;
+            while (left<=right&&arr[right]>arr[p]) right--;
+            swap(arr,left,right);
+        }
+        swap(arr,p,right);
+        return right;
+    }
     public static void swap(int[] arr,int p,int q){
         int temp=arr[p];
         arr[p]=arr[q];
