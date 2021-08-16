@@ -4,7 +4,7 @@ package tree;
  * @Author dsk
  * @Date 2021/8/12 13:28
  */
-
+//求树的最大深度
 public class BinaryTreeMaxDepth {
     public static void main(String[] args) {
         Integer[] tree={3,9,20,null,null,15,7};
